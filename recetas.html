@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+	<!--======== Basic Page Needs =========-->
+
+	<meta charset="utf-8">
+	<title>Cheff Colombia App</title>
+
+	<!--======== Mobile Specific Metas =========-->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--======== Fav and touch icons =========-->
+
+	<link rel="shortcut icon" href="img/icons/favicon.ico">
+	<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.html">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.html">
+
+	<!--======== Google web font =========-->
+
+	<link href='' rel='stylesheet' type='text/css'>
+
+	<!--======== Styles =========-->
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/colorbox.css" />
+
+	<!--======== Scripts =========-->
+
+	<script src="js/jquery.js"></script>
+	<script src="js/color.js"></script>
+	<script src="js/colorbox.min.js"></script>
+	<script src="js/functions.js"></script>
+</head>
+<body>
+	<header>
+		<div class="menu-container">
+			<div class="menu">
+				<img src="img/menu.png" alt="">
+				<ul>
+					<li class="home">
+						<div>
+							<img src="img/menu/home.png" alt="">
+						</div>
+						Inicio
+					</li>
+					<li class="listado">
+						<div>
+							<img src="img/menu/listado.png" alt="">
+						</div>
+						Ir al listado de recetas
+					</li>
+					<li class="news-alert">
+						<div>
+							<img src="img/menu/notificaciones.png" alt="">
+						</div>
+						Notificaciones
+					</li>
+					<li class="info-alert">
+						<div>
+							<img src="img/menu/info.png" alt="">
+						</div>
+						Acerca de esta aplicación
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="logo"><span class="cheff">CHEF</span> <span class="colombia">Colombia</span></div>
+		<div class="search-container">
+			<div class="search">
+				<img src="img/search.png" alt="">
+			</div>
+		</div>
+		<div class="search-input">
+			<input type="text" value=""/>
+		</div>
+	</header>
+	<section class="main">
+		<ul class="recetas">
+			<li data-goto="receta1">
+				<div class="img" style="background-image:url(img/recetas/imagen1-1.png)"></div>
+				<h2>Huevos en Canasta</h2>
+				<span>capitulo 1</span>
+			</li>
+			<li data-goto="receta2">
+				<div class="img" style="background-image:url(img/recetas/imagen2-1.png)"></div>
+				<h2>Bistec de coliflor</h2>
+				<span>capitulo 2</span>
+			</li>
+			<li data-goto="receta3">
+				<div class="img" style="background-image:url(img/recetas/imagen3-1.png)"></div>
+				<h2>Aderezos Caseros</h2>
+				<span>capitulo 3</span>
+			</li>
+			<li data-goto="receta4">
+				<div class="img" style="background-image:url(img/recetas/imagen4-1.png)"></div>
+				<h2>Crudo y Ceviche</h2>
+				<span>capitulo 4</span>
+			</li>
+			<li data-goto="receta5">
+				<div class="img" style="background-image:url(img/recetas/imagen5-1.png)"></div>
+				<h2>Pastel de carne con puré</h2>
+				<span>capitulo 5</span>
+			</li>
+			<li data-goto="receta6">
+				<div class="img" style="background-image:url(img/recetas/imagen6-1.png)"></div>
+				<h2>Limpiar y preparar alcachofa</h2>
+				<span>capitulo 6</span>
+			</li>
+			<li data-goto="receta7">
+				<div class="img" style="background-image:url(img/recetas/imagen7-1.png)"></div>
+				<h2>Repollo relleno</h2>
+				<span>capitulo 7</span>
+			</li>
+			<li data-goto="receta8">
+				<div class="img" style="background-image:url(img/recetas/imagen8-1.png)"></div>
+				<h2>Ensalada de pulpo y calamar</h2>
+				<span>capitulo 8</span>
+			</li>
+			<li data-goto="receta9">
+				<div class="img" style="background-image:url(img/recetas/imagen9-1.png)"></div>
+				<h2>Pescado al horno</h2>
+				<span>capitulo 9</span>
+			</li>
+			<li data-goto="receta10">
+				<div class="img" style="background-image:url(img/recetas/imagen10-1.png)"></div>
+				<h2>Ensalada de sandía</h2>
+				<span>capitulo 10</span>
+			</li>
+			<li data-goto="receta11">
+				<div class="img" style="background-image:url(img/recetas/imagen11-1.png)"></div>
+				<h2>Albahaca de tres distintas maneras</h2>
+				<span>capitulo 11</span>
+			</li>
+			<li data-goto="receta12">
+				<div class="img" style="background-image:url(img/recetas/imagen12-1.png)"></div>
+				<h2>Costillas de cerdo</h2>
+				<span>capitulo 12</span>
+			</li>
+			<li data-goto="receta13">
+				<div class="img" style="background-image:url(img/recetas/imagen13-1.png)"></div>
+				<h2>Utilizando un ladrillo en la cocina</h2>
+				<span>capitulo 13</span>
+			</li>
+		</ul>
+	</section>
+	<!--========== RECETAS ==========-->
+	<section class="slide" data-slide="receta1">
+		<header>
+			<div class="menu-container">
+				<div class="menu">
+					<img src="img/menu.png" alt="">
+					<ul>
+						<li class="home">
+							<div>
+								<img src="img/menu/home.png" alt="">
+							</div>
+							Inicio
+						</li>
+						<li class="listado">
+							<div>
+								<img src="img/menu/listado.png" alt="">
+							</div>
+							Ir al listado de recetas
+						</li>
+						<li class="news-alert">
+							<div>
+								<img src="img/menu/notificaciones.png" alt="">
+							</div>
+							Notificaciones
+						</li>
+						<li class="info-alert">
+							<div>
+								<img src="img/menu/info.png" alt="">
+							</div>
+							Acerca de esta aplicación
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo"><span class="cheff">CHEF</span> <span class="colombia">Colombia</span></div>
+			<div class="share-container">
+				<div class="share">
+					<img src="img/share.png" alt="">
+					<ul>
+						<li>
+							<div>
+								<a href="http://m.facebook.com/sharer.php?u=http://www.google.com">
+									<img src="img/menu/facebook.png" alt="">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="http://mobile.twitter.com/home?status=http://www.google.com">
+									<img src="img/menu/twitter.png" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<h2 class="receta-titulo">Episodio 1 </br> Huevos en canasta</h2>
+		<a href="https://www.youtube.com/watch?v=DWVFovMW8zY">
+			<img class="video" src="img/recetas/imagen1-1.png" alt="">
+		</a>
+		<button data-goto="pdf1">revisa la receta completa</button>
+		<ul class="fancybox">
+			<li><a class="modal" href="img/recetas/imagen1-1.png"><div class="img" style="background-image:url(img/recetas/imagen1-1.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen1-2.png"><div class="img" style="background-image:url(img/recetas/imagen1-2.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen1-3.png"><div class="img" style="background-image:url(img/recetas/imagen1-3.png)"></div></a></li>
+		</ul>
+		<footer> <a class="anterior" data-slide="receta1" href="#"> <span><</span> anterior</a> <a data-goto="receta2" class="siguiente" href="#">siguiente <span>></span> </a> </footer>
+	</section>
+	<section class="slide" data-slide="receta2">
+		<header>
+			<div class="menu-container">
+				<div class="menu">
+					<img src="img/menu.png" alt="">
+					<ul>
+						<li class="home">
+							<div>
+								<img src="img/menu/home.png" alt="">
+							</div>
+							Inicio
+						</li>
+						<li class="listado">
+							<div>
+								<img src="img/menu/listado.png" alt="">
+							</div>
+							Ir al listado de recetas
+						</li>
+						<li class="news-alert">
+							<div>
+								<img src="img/menu/notificaciones.png" alt="">
+							</div>
+							Notificaciones
+						</li>
+						<li class="info-alert">
+							<div>
+								<img src="img/menu/info.png" alt="">
+							</div>
+							Acerca de esta aplicación
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo"><span class="cheff">CHEF</span> <span class="colombia">Colombia</span></div>
+			<div class="share-container">
+				<div class="share">
+					<img src="img/share.png" alt="">
+					<ul>
+						<li>
+							<div>
+								<a href="http://m.facebook.com/sharer.php?u=http://www.google.com">
+									<img src="img/menu/facebook.png" alt="">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="http://mobile.twitter.com/home?status=http://www.google.com">
+									<img src="img/menu/twitter.png" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<h2 class="receta-titulo">Episodio 2 </br> Bistec de coliflor</h2>
+		<a href="https://www.youtube.com/watch?v=JKRC8J8UtZc">
+			<img class="video" src="img/recetas/imagen2-1.png" alt="">
+		</a>
+		<button data-goto="pdf1">revisa la receta completa</button>
+		<ul class="fancybox">
+			<li><a class="modal" href="img/recetas/imagen2-1.png"><div class="img" style="background-image:url(img/recetas/imagen2-1.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen2-2.png"><div class="img" style="background-image:url(img/recetas/imagen2-2.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen2-3.png"><div class="img" style="background-image:url(img/recetas/imagen2-3.png)"></div></a></li>
+		</ul>
+		<footer> <a class="anterior" data-slide="receta2" href="#"> <span><</span> anterior</a> <a data-goto="receta3" class="siguiente" href="#">siguiente <span>></span> </a> </footer>
+	</section>
+	<section class="slide" data-slide="receta3">
+		<header>
+			<div class="menu-container">
+				<div class="menu">
+					<img src="img/menu.png" alt="">
+					<ul>
+						<li class="home">
+							<div>
+								<img src="img/menu/home.png" alt="">
+							</div>
+							Inicio
+						</li>
+						<li class="listado">
+							<div>
+								<img src="img/menu/listado.png" alt="">
+							</div>
+							Ir al listado de recetas
+						</li>
+						<li class="news-alert">
+							<div>
+								<img src="img/menu/notificaciones.png" alt="">
+							</div>
+							Notificaciones
+						</li>
+						<li class="info-alert">
+							<div>
+								<img src="img/menu/info.png" alt="">
+							</div>
+							Acerca de esta aplicación
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo"><span class="cheff">CHEF</span> <span class="colombia">Colombia</span></div>
+			<div class="share-container">
+				<div class="share">
+					<img src="img/share.png" alt="">
+					<ul>
+						<li>
+							<div>
+								<a href="http://m.facebook.com/sharer.php?u=http://www.google.com">
+									<img src="img/menu/facebook.png" alt="">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="http://mobile.twitter.com/home?status=http://www.google.com">
+									<img src="img/menu/twitter.png" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<h2 class="receta-titulo">Episodio 3 </br> Aderezos caseros</h2>
+		<a href="https://www.youtube.com/watch?v=z3ZCg03eN3M">
+			<img class="video" src="img/recetas/imagen3-1.png" alt="">
+		</a>
+		<button data-goto="pdf1">revisa la receta completa</button>
+		<ul class="fancybox">
+			<li><a class="modal" href="img/recetas/imagen3-1.png"><div class="img" style="background-image:url(img/recetas/imagen3-1.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen3-2.png"><div class="img" style="background-image:url(img/recetas/imagen3-2.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen3-3.png"><div class="img" style="background-image:url(img/recetas/imagen3-3.png)"></div></a></li>
+		</ul>
+		<footer> <a class="anterior" data-slide="receta3" href="#"> <span><</span> anterior</a> <a data-goto="receta4" class="siguiente" href="#">siguiente <span>></span> </a> </footer>
+	</section>
+	<section class="slide" data-slide="receta4">
+		<header>
+			<div class="menu-container">
+				<div class="menu">
+					<img src="img/menu.png" alt="">
+					<ul>
+						<li class="home">
+							<div>
+								<img src="img/menu/home.png" alt="">
+							</div>
+							Inicio
+						</li>
+						<li class="listado">
+							<div>
+								<img src="img/menu/listado.png" alt="">
+							</div>
+							Ir al listado de recetas
+						</li>
+						<li class="news-alert">
+							<div>
+								<img src="img/menu/notificaciones.png" alt="">
+							</div>
+							Notificaciones
+						</li>
+						<li class="info-alert">
+							<div>
+								<img src="img/menu/info.png" alt="">
+							</div>
+							Acerca de esta aplicación
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo"><span class="cheff">CHEF</span> <span class="colombia">Colombia</span></div>
+			<div class="share-container">
+				<div class="share">
+					<img src="img/share.png" alt="">
+					<ul>
+						<li>
+							<div>
+								<a href="http://m.facebook.com/sharer.php?u=http://www.google.com">
+									<img src="img/menu/facebook.png" alt="">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="http://mobile.twitter.com/home?status=http://www.google.com">
+									<img src="img/menu/twitter.png" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<h2 class="receta-titulo">Episodio 4 </br> Crudo y ceviche</h2>
+		<a href="https://www.youtube.com/watch?v=oanjLQWK2lo">
+			<img class="video" src="img/recetas/imagen4-1.png" alt="">
+		</a>
+		<button data-goto="pdf1">revisa la receta completa</button>
+		<ul class="fancybox">
+			<li><a class="modal" href="img/recetas/imagen4-1.png"><div class="img" style="background-image:url(img/recetas/imagen4-1.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen4-2.png"><div class="img" style="background-image:url(img/recetas/imagen4-2.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen4-3.png"><div class="img" style="background-image:url(img/recetas/imagen4-3.png)"></div></a></li>
+		</ul>
+		<footer> <a class="anterior" data-slide="receta4" href="#"> <span><</span> anterior</a> <a data-goto="receta5" class="siguiente" href="#">siguiente <span>></span> </a> </footer>
+	</section>
+	<section class="slide" data-slide="receta5">
+		<header>
+			<div class="menu-container">
+				<div class="menu">
+					<img src="img/menu.png" alt="">
+					<ul>
+						<li class="home">
+							<div>
+								<img src="img/menu/home.png" alt="">
+							</div>
+							Inicio
+						</li>
+						<li class="listado">
+							<div>
+								<img src="img/menu/listado.png" alt="">
+							</div>
+							Ir al listado de recetas
+						</li>
+						<li class="news-alert">
+							<div>
+								<img src="img/menu/notificaciones.png" alt="">
+							</div>
+							Notificaciones
+						</li>
+						<li class="info-alert">
+							<div>
+								<img src="img/menu/info.png" alt="">
+							</div>
+							Acerca de esta aplicación
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo"><span class="cheff">CHEF</span> <span class="colombia">Colombia</span></div>
+			<div class="share-container">
+				<div class="share">
+					<img src="img/share.png" alt="">
+					<ul>
+						<li>
+							<div>
+								<a href="http://m.facebook.com/sharer.php?u=http://www.google.com">
+									<img src="img/menu/facebook.png" alt="">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="http://mobile.twitter.com/home?status=http://www.google.com">
+									<img src="img/menu/twitter.png" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<h2 class="receta-titulo">Episodio 5 </br> <span style="font-size:15px">Pastel de carne con puré</span></h2>
+		<a href="https://www.youtube.com/watch?v=ibsgJN1fchY">
+			<img class="video" src="img/recetas/imagen5-1.png" alt="">
+		</a>
+		<button data-goto="pdf1">revisa la receta completa</button>
+		<ul class="fancybox">
+			<li><a class="modal" href="img/recetas/imagen5-1.png"><div class="img" style="background-image:url(img/recetas/imagen5-1.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen5-2.png"><div class="img" style="background-image:url(img/recetas/imagen5-2.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen5-3.png"><div class="img" style="background-image:url(img/recetas/imagen5-3.png)"></div></a></li>
+		</ul>
+		<footer> <a class="anterior" data-slide="receta5" href="#"> <span><</span> anterior</a> <a data-goto="receta6" class="siguiente" href="#">siguiente <span>></span> </a> </footer>
+	</section>
+	<section class="slide" data-slide="receta6">
+		<header>
+			<div class="menu-container">
+				<div class="menu">
+					<img src="img/menu.png" alt="">
+					<ul>
+						<li class="home">
+							<div>
+								<img src="img/menu/home.png" alt="">
+							</div>
+							Inicio
+						</li>
+						<li class="listado">
+							<div>
+								<img src="img/menu/listado.png" alt="">
+							</div>
+							Ir al listado de recetas
+						</li>
+						<li class="news-alert">
+							<div>
+								<img src="img/menu/notificaciones.png" alt="">
+							</div>
+							Notificaciones
+						</li>
+						<li class="info-alert">
+							<div>
+								<img src="img/menu/info.png" alt="">
+							</div>
+							Acerca de esta aplicación
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo"><span class="cheff">CHEF</span> <span class="colombia">Colombia</span></div>
+			<div class="share-container">
+				<div class="share">
+					<img src="img/share.png" alt="">
+					<ul>
+						<li>
+							<div>
+								<a href="http://m.facebook.com/sharer.php?u=http://www.google.com">
+									<img src="img/menu/facebook.png" alt="">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="http://mobile.twitter.com/home?status=http://www.google.com">
+									<img src="img/menu/twitter.png" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<h2 class="receta-titulo">Episodio 6 </br> <span style="font-size:15px">Limpiar y preparar alcachofa</span></h2>
+		<a href="https://www.youtube.com/watch?v=OKk4cC8Ix_E">
+			<img class="video" src="img/recetas/imagen6-1.png" alt="">
+		</a>
+		<button data-goto="pdf1">revisa la receta completa</button>
+		<ul class="fancybox">
+			<li><a class="modal" href="img/recetas/imagen6-1.png"><div class="img" style="background-image:url(img/recetas/imagen6-1.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen6-2.png"><div class="img" style="background-image:url(img/recetas/imagen6-2.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen6-3.png"><div class="img" style="background-image:url(img/recetas/imagen6-3.png)"></div></a></li>
+		</ul>
+		<footer> <a class="anterior" data-slide="receta6" href="#"> <span><</span> anterior</a> <a data-goto="receta7" class="siguiente" href="#">siguiente <span>></span> </a> </footer>
+	</section>
+	<section class="slide" data-slide="receta7">
+		<header>
+			<div class="menu-container">
+				<div class="menu">
+					<img src="img/menu.png" alt="">
+					<ul>
+						<li class="home">
+							<div>
+								<img src="img/menu/home.png" alt="">
+							</div>
+							Inicio
+						</li>
+						<li class="listado">
+							<div>
+								<img src="img/menu/listado.png" alt="">
+							</div>
+							Ir al listado de recetas
+						</li>
+						<li class="news-alert">
+							<div>
+								<img src="img/menu/notificaciones.png" alt="">
+							</div>
+							Notificaciones
+						</li>
+						<li class="info-alert">
+							<div>
+								<img src="img/menu/info.png" alt="">
+							</div>
+							Acerca de esta aplicación
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo"><span class="cheff">CHEF</span> <span class="colombia">Colombia</span></div>
+			<div class="share-container">
+				<div class="share">
+					<img src="img/share.png" alt="">
+					<ul>
+						<li>
+							<div>
+								<a href="http://m.facebook.com/sharer.php?u=http://www.google.com">
+									<img src="img/menu/facebook.png" alt="">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="http://mobile.twitter.com/home?status=http://www.google.com">
+									<img src="img/menu/twitter.png" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<h2 class="receta-titulo">Episodio 7 </br> Repollo relleno</h2>
+		<a href="https://www.youtube.com/watch?v=JEzdCxFrglg">
+			<img class="video" src="img/recetas/imagen7-1.png" alt="">
+		</a>
+		<button data-goto="pdf1">revisa la receta completa</button>
+		<ul class="fancybox">
+			<li><a class="modal" href="img/recetas/imagen7-1.png"><div class="img" style="background-image:url(img/recetas/imagen7-1.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen7-2.png"><div class="img" style="background-image:url(img/recetas/imagen7-2.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen7-3.png"><div class="img" style="background-image:url(img/recetas/imagen7-3.png)"></div></a></li>
+		</ul>
+		<footer> <a class="anterior" data-slide="receta7" href="#"> <span><</span> anterior</a> <a data-goto="receta8" class="siguiente" href="#">siguiente <span>></span> </a> </footer>
+	</section>
+	<section class="slide" data-slide="receta8">
+		<header>
+			<div class="menu-container">
+				<div class="menu">
+					<img src="img/menu.png" alt="">
+					<ul>
+						<li class="home">
+							<div>
+								<img src="img/menu/home.png" alt="">
+							</div>
+							Inicio
+						</li>
+						<li class="listado">
+							<div>
+								<img src="img/menu/listado.png" alt="">
+							</div>
+							Ir al listado de recetas
+						</li>
+						<li class="news-alert">
+							<div>
+								<img src="img/menu/notificaciones.png" alt="">
+							</div>
+							Notificaciones
+						</li>
+						<li class="info-alert">
+							<div>
+								<img src="img/menu/info.png" alt="">
+							</div>
+							Acerca de esta aplicación
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo"><span class="cheff">CHEF</span> <span class="colombia">Colombia</span></div>
+			<div class="share-container">
+				<div class="share">
+					<img src="img/share.png" alt="">
+					<ul>
+						<li>
+							<div>
+								<a href="http://m.facebook.com/sharer.php?u=http://www.google.com">
+									<img src="img/menu/facebook.png" alt="">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="http://mobile.twitter.com/home?status=http://www.google.com">
+									<img src="img/menu/twitter.png" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<h2 class="receta-titulo">Episodio 8 </br> <span style="font-size:15px">Ensalada de pulpo y calamar</span></h2>
+		<a href="https://www.youtube.com/watch?v=6VwFO4Gef4E">
+			<img class="video" src="img/recetas/imagen8-1.png" alt="">
+		</a>
+		<button data-goto="pdf1">revisa la receta completa</button>
+		<ul class="fancybox">
+			<li><a class="modal" href="img/recetas/imagen8-1.png"><div class="img" style="background-image:url(img/recetas/imagen8-1.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen8-2.png"><div class="img" style="background-image:url(img/recetas/imagen8-2.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen8-3.png"><div class="img" style="background-image:url(img/recetas/imagen8-3.png)"></div></a></li>
+		</ul>
+		<footer> <a class="anterior" data-slide="receta8" href="#"> <span><</span> anterior</a> <a data-goto="receta9" class="siguiente" href="#">siguiente <span>></span> </a> </footer>
+	</section>
+	<section class="slide" data-slide="receta9">
+		<header>
+			<div class="menu-container">
+				<div class="menu">
+					<img src="img/menu.png" alt="">
+					<ul>
+						<li class="home">
+							<div>
+								<img src="img/menu/home.png" alt="">
+							</div>
+							Inicio
+						</li>
+						<li class="listado">
+							<div>
+								<img src="img/menu/listado.png" alt="">
+							</div>
+							Ir al listado de recetas
+						</li>
+						<li class="news-alert">
+							<div>
+								<img src="img/menu/notificaciones.png" alt="">
+							</div>
+							Notificaciones
+						</li>
+						<li class="info-alert">
+							<div>
+								<img src="img/menu/info.png" alt="">
+							</div>
+							Acerca de esta aplicación
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo"><span class="cheff">CHEF</span> <span class="colombia">Colombia</span></div>
+			<div class="share-container">
+				<div class="share">
+					<img src="img/share.png" alt="">
+					<ul>
+						<li>
+							<div>
+								<a href="http://m.facebook.com/sharer.php?u=http://www.google.com">
+									<img src="img/menu/facebook.png" alt="">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="http://mobile.twitter.com/home?status=http://www.google.com">
+									<img src="img/menu/twitter.png" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<h2 class="receta-titulo">Episodio 9 </br> Pescado al horno</h2>
+		<a href="https://www.youtube.com/watch?v=s9edix2tF9I">
+			<img class="video" src="img/recetas/imagen9-1.png" alt="">
+		</a>
+		<button data-goto="pdf1">revisa la receta completa</button>
+		<ul class="fancybox">
+			<li><a class="modal" href="img/recetas/imagen9-1.png"><div class="img" style="background-image:url(img/recetas/imagen9-1.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen9-2.png"><div class="img" style="background-image:url(img/recetas/imagen9-2.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen9-3.png"><div class="img" style="background-image:url(img/recetas/imagen9-3.png)"></div></a></li>
+		</ul>
+		<footer> <a class="anterior" data-slide="receta9" href="#"> <span><</span> anterior</a> <a data-goto="receta10" class="siguiente" href="#">siguiente <span>></span> </a> </footer>
+	</section>
+	<section class="slide" data-slide="receta10">
+		<header>
+			<div class="menu-container">
+				<div class="menu">
+					<img src="img/menu.png" alt="">
+					<ul>
+						<li class="home">
+							<div>
+								<img src="img/menu/home.png" alt="">
+							</div>
+							Inicio
+						</li>
+						<li class="listado">
+							<div>
+								<img src="img/menu/listado.png" alt="">
+							</div>
+							Ir al listado de recetas
+						</li>
+						<li class="news-alert">
+							<div>
+								<img src="img/menu/notificaciones.png" alt="">
+							</div>
+							Notificaciones
+						</li>
+						<li class="info-alert">
+							<div>
+								<img src="img/menu/info.png" alt="">
+							</div>
+							Acerca de esta aplicación
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo"><span class="cheff">CHEF</span> <span class="colombia">Colombia</span></div>
+			<div class="share-container">
+				<div class="share">
+					<img src="img/share.png" alt="">
+					<ul>
+						<li>
+							<div>
+								<a href="http://m.facebook.com/sharer.php?u=http://www.google.com">
+									<img src="img/menu/facebook.png" alt="">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="http://mobile.twitter.com/home?status=http://www.google.com">
+									<img src="img/menu/twitter.png" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<h2 class="receta-titulo">Episodio 10 </br> Ensalada de sandía</h2>
+		<a href="https://www.youtube.com/watch?v=L3QaGvsWH6E">
+			<img class="video" src="img/recetas/imagen10-1.png" alt="">
+		</a>
+		<button data-goto="pdf1">revisa la receta completa</button>
+		<ul class="fancybox">
+			<li><a class="modal" href="img/recetas/imagen10-1.png"><div class="img" style="background-image:url(img/recetas/imagen10-1.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen10-2.png"><div class="img" style="background-image:url(img/recetas/imagen10-2.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen10-3.png"><div class="img" style="background-image:url(img/recetas/imagen10-3.png)"></div></a></li>
+		</ul>
+		<footer> <a class="anterior" data-slide="receta10" href="#"> <span><</span> anterior</a> <a data-goto="receta11" class="siguiente" href="#">siguiente <span>></span> </a> </footer>
+	</section>
+	<section class="slide" data-slide="receta11">
+		<header>
+			<div class="menu-container">
+				<div class="menu">
+					<img src="img/menu.png" alt="">
+					<ul>
+						<li class="home">
+							<div>
+								<img src="img/menu/home.png" alt="">
+							</div>
+							Inicio
+						</li>
+						<li class="listado">
+							<div>
+								<img src="img/menu/listado.png" alt="">
+							</div>
+							Ir al listado de recetas
+						</li>
+						<li class="news-alert">
+							<div>
+								<img src="img/menu/notificaciones.png" alt="">
+							</div>
+							Notificaciones
+						</li>
+						<li class="info-alert">
+							<div>
+								<img src="img/menu/info.png" alt="">
+							</div>
+							Acerca de esta aplicación
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo"><span class="cheff">CHEF</span> <span class="colombia">Colombia</span></div>
+			<div class="share-container">
+				<div class="share">
+					<img src="img/share.png" alt="">
+					<ul>
+						<li>
+							<div>
+								<a href="http://m.facebook.com/sharer.php?u=http://www.google.com">
+									<img src="img/menu/facebook.png" alt="">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="http://mobile.twitter.com/home?status=http://www.google.com">
+									<img src="img/menu/twitter.png" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<h2 class="receta-titulo">Episodio 11 </br> <span style="font-size:13px">Albahaca de tres distintas maneras</span></h2>
+		<a href="https://www.youtube.com/watch?v=HDcQxbNjbTY">
+			<img class="video" src="img/recetas/imagen11-1.png" alt="">
+		</a>
+		<button data-goto="pdf1">revisa la receta completa</button>
+		<ul class="fancybox">
+			<li><a class="modal" href="img/recetas/imagen11-1.png"><div class="img" style="background-image:url(img/recetas/imagen11-1.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen11-2.png"><div class="img" style="background-image:url(img/recetas/imagen11-2.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen11-3.png"><div class="img" style="background-image:url(img/recetas/imagen1-3.png)"></div></a></li>
+		</ul>
+		<footer> <a class="anterior" data-slide="receta11" href="#"> <span><</span> anterior</a> <a data-goto="receta12" class="siguiente" href="#">siguiente <span>></span> </a> </footer>
+	</section>
+	<section class="slide" data-slide="receta12">
+		<header>
+			<div class="menu-container">
+				<div class="menu">
+					<img src="img/menu.png" alt="">
+					<ul>
+						<li class="home">
+							<div>
+								<img src="img/menu/home.png" alt="">
+							</div>
+							Inicio
+						</li>
+						<li class="listado">
+							<div>
+								<img src="img/menu/listado.png" alt="">
+							</div>
+							Ir al listado de recetas
+						</li>
+						<li class="news-alert">
+							<div>
+								<img src="img/menu/notificaciones.png" alt="">
+							</div>
+							Notificaciones
+						</li>
+						<li class="info-alert">
+							<div>
+								<img src="img/menu/info.png" alt="">
+							</div>
+							Acerca de esta aplicación
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo"><span class="cheff">CHEF</span> <span class="colombia">Colombia</span></div>
+			<div class="share-container">
+				<div class="share">
+					<img src="img/share.png" alt="">
+					<ul>
+						<li>
+							<div>
+								<a href="http://m.facebook.com/sharer.php?u=http://www.google.com">
+									<img src="img/menu/facebook.png" alt="">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="http://mobile.twitter.com/home?status=http://www.google.com">
+									<img src="img/menu/twitter.png" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<h2 class="receta-titulo">Episodio 12 </br> Costillas de cerdo</h2>
+		<a href="https://www.youtube.com/watch?v=_IzJP1AlxDQ">
+			<img class="video" src="img/recetas/imagen12-1.png" alt="">
+		</a>
+		<button data-goto="pdf1">revisa la receta completa</button>
+		<ul class="fancybox">
+			<li><a class="modal" href="img/recetas/imagen12-1.png"><div class="img" style="background-image:url(img/recetas/imagen12-1.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen12-2.png"><div class="img" style="background-image:url(img/recetas/imagen12-2.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen12-3.png"><div class="img" style="background-image:url(img/recetas/imagen12-3.png)"></div></a></li>
+		</ul>
+		<footer> <a class="anterior" data-slide="receta12" href="#"> <span><</span> anterior</a> <a data-goto="receta13" class="siguiente" href="#">siguiente <span>></span> </a> </footer>
+	</section>
+	<section class="slide" data-slide="receta13">
+		<header>
+			<div class="menu-container">
+				<div class="menu">
+					<img src="img/menu.png" alt="">
+					<ul>
+						<li class="home">
+							<div>
+								<img src="img/menu/home.png" alt="">
+							</div>
+							Inicio
+						</li>
+						<li class="listado">
+							<div>
+								<img src="img/menu/listado.png" alt="">
+							</div>
+							Ir al listado de recetas
+						</li>
+						<li class="news-alert">
+							<div>
+								<img src="img/menu/notificaciones.png" alt="">
+							</div>
+							Notificaciones
+						</li>
+						<li class="info-alert">
+							<div>
+								<img src="img/menu/info.png" alt="">
+							</div>
+							Acerca de esta aplicación
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo"><span class="cheff">CHEF</span> <span class="colombia">Colombia</span></div>
+			<div class="share-container">
+				<div class="share">
+					<img src="img/share.png" alt="">
+					<ul>
+						<li>
+							<div>
+								<a href="http://m.facebook.com/sharer.php?u=http://www.google.com">
+									<img src="img/menu/facebook.png" alt="">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="http://mobile.twitter.com/home?status=http://www.google.com">
+									<img src="img/menu/twitter.png" alt="">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<h2 class="receta-titulo">Episodio 13 </br> <span style="font-size:13px">Utilizando un ladrillo en la cocina</span></h2>
+		<a href="https://www.youtube.com/watch?v=y1g5Imr1mrc">
+			<img class="video" src="img/recetas/imagen13-1.png" alt="">
+		</a>
+		<button data-goto="pdf1">revisa la receta completa</button>
+		<ul class="fancybox">
+			<li><a class="modal" href="img/recetas/imagen13-1.png"><div class="img" style="background-image:url(img/recetas/imagen13-1.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen13-2.png"><div class="img" style="background-image:url(img/recetas/imagen13-2.png)"></div></a></li>
+			<li><a class="modal" href="img/recetas/imagen13-3.png"><div class="img" style="background-image:url(img/recetas/imagen13-3.png)"></div></a></li>
+		</ul>
+		<footer> <a class="anterior" data-slide="receta13" href="#"> <span><</span> anterior</a></footer>
+	</section>
+	<!--========== PDF's ==========-->
+	<section class="pdf" data-pdf="pdf1">
+		<div class="loadpdf">
+			<img src="pdfs/pdf1-0.png" alt=""/><img src="pdfs/pdf1-1.png" alt=""/>
+		</div>
+		<footer> <a class="pdfprev" data-pdf="pdf1" href="#"> <span><</span> anterior</a></footer>
+	</section>
+	<section class="pdf" data-pdf="pdf2">
+		<div class="loadpdf">
+			<img src="pdfs/pdf1-0.png" alt=""/><img src="pdfs/pdf1-1.png" alt=""/>
+		</div>
+		<footer> <a class="pdfprev" data-pdf="pdf2" href="#"> <span><</span> anterior</a></footer>
+	</section>
+	<section class="pdf" data-pdf="pdf3">
+		<div class="loadpdf">
+			<img src="pdfs/pdf1-0.png" alt=""/><img src="pdfs/pdf1-1.png" alt=""/>
+		</div>
+		<footer> <a class="pdfprev" data-pdf="pdf3" href="#"> <span><</span> anterior</a></footer>
+	</section>
+	<section class="pdf" data-pdf="pdf4">
+		<div class="loadpdf">
+			<img src="pdfs/pdf1-0.png" alt=""/><img src="pdfs/pdf1-1.png" alt=""/>
+		</div>
+		<footer> <a class="pdfprev" data-pdf="pdf4" href="#"> <span><</span> anterior</a></footer>
+	</section>
+	<section class="pdf" data-pdf="pdf5">
+		<div class="loadpdf">
+			<img src="pdfs/pdf1-0.png" alt=""/><img src="pdfs/pdf1-1.png" alt=""/>
+		</div>
+		<footer> <a class="pdfprev" data-pdf="pdf5" href="#"> <span><</span> anterior</a></footer>
+	</section>
+	<section class="pdf" data-pdf="pdf6">
+		<div class="loadpdf">
+			<img src="pdfs/pdf1-0.png" alt=""/><img src="pdfs/pdf1-1.png" alt=""/>
+		</div>
+		<footer> <a class="pdfprev" data-pdf="pdf6" href="#"> <span><</span> anterior</a></footer>
+	</section>
+	<section class="pdf" data-pdf="pdf7">
+		<div class="loadpdf">
+			<img src="pdfs/pdf1-0.png" alt=""/><img src="pdfs/pdf1-1.png" alt=""/>
+		</div>
+		<footer> <a class="pdfprev" data-pdf="pdf7" href="#"> <span><</span> anterior</a></footer>
+	</section>
+	<section class="pdf" data-pdf="pdf8">
+		<div class="loadpdf">
+			<img src="pdfs/pdf1-0.png" alt=""/><img src="pdfs/pdf1-1.png" alt=""/>
+		</div>
+		<footer> <a class="pdfprev" data-pdf="pdf8" href="#"> <span><</span> anterior</a></footer>
+	</section>
+	<section class="pdf" data-pdf="pdf9">
+		<div class="loadpdf">
+			<img src="pdfs/pdf1-0.png" alt=""/><img src="pdfs/pdf1-1.png" alt=""/>
+		</div>
+		<footer> <a class="pdfprev" data-pdf="pdf9" href="#"> <span><</span> anterior</a></footer>
+	</section>
+	<section class="pdf" data-pdf="pdf10">
+		<div class="loadpdf">
+			<img src="pdfs/pdf1-0.png" alt=""/><img src="pdfs/pdf1-1.png" alt=""/>
+		</div>
+		<footer> <a class="pdfprev" data-pdf="pdf10" href="#"> <span><</span> anterior</a></footer>
+	</section>
+	<section class="pdf" data-pdf="pdf11">
+		<div class="loadpdf">
+			<img src="pdfs/pdf1-0.png" alt=""/><img src="pdfs/pdf1-1.png" alt=""/>
+		</div>
+		<footer> <a class="pdfprev" data-pdf="pdf11" href="#"> <span><</span> anterior</a></footer>
+	</section>
+	<section class="pdf" data-pdf="pdf12">
+		<div class="loadpdf">
+			<img src="pdfs/pdf1-0.png" alt=""/><img src="pdfs/pdf1-1.png" alt=""/>
+		</div>
+		<footer> <a class="pdfprev" data-pdf="pdf12" href="#"> <span><</span> anterior</a></footer>
+	</section>
+	<section class="pdf" data-pdf="pdf13">
+		<div class="loadpdf">
+			<img src="pdfs/pdf1-0.png" alt=""/><img src="pdfs/pdf1-1.png" alt=""/>
+		</div>
+		<footer> <a class="pdfprev" data-pdf="pdf13" href="#"> <span><</span> anterior</a></footer>
+	</section>
+	<div class="info">
+		CheffColombia v1.0.0</br></br>
+		Recetario móvil del programa That's Fresh</br>
+		de Disney Interactive y Canal Tr3ce</br></br>
+		Derechos Reservados
+		<img style="position:absolute;bottom:0;right:0;z-index:0" src="img/trece.png" alt="">
+	</div>
+	<div class="news">
+		<div>
+			<div class="aviso">
+				<p>Aviso del Programa</p>
+				<span>Te avisaremos cuando el capitulo de tv esté próximo a iniciar</span>
+			</div>
+			<div class="onoffswitch">
+				<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="swith1" checked>
+				<label class="onoffswitch-label" for="swith1">
+					<div class="onoffswitch-inner"></div>
+					<div class="onoffswitch-switch"></div>
+				</label>
+			</div>
+		</div>
+		<div>
+			<div class="aviso">
+				<p>Aviso de novedades</p>
+				<span>Te avisaremos cuando haya contenido nuevo disponible</span>
+			</div>
+			<div class="onoffswitch">
+				<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch2" checked>
+				<label class="onoffswitch-label" for="switch2">
+					<div class="onoffswitch-inner"></div>
+					<div class="onoffswitch-switch"></div>
+				</label>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
