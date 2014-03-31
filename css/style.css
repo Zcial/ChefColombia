@@ -1,0 +1,285 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:'HelveticaNeue Ite', sans-serif;
+	width:100%;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+a{
+	outline:none;
+	border:none;
+}
+header{
+	padding:0 10px;
+}
+/*menu*/
+.menu-container{
+	padding:5px;
+	margin:15px 0 15px 0px;
+	position:relative;
+	float:left;
+}
+.menu{
+	width:24px;
+	height:24px;
+}
+.menu img{
+	max-width:100%;
+}
+.menu ul{
+	display:none;
+	padding:0;
+	background:rgba(132, 13, 143, 0.9);
+	list-style-type:none;
+	position:absolute;
+	left:-10px;
+	z-index:99;
+	color:#bfbfbf;
+}
+.menu li{
+	text-align:center;
+	font-size:10px;
+	padding:10px 1px;
+}
+.menu li img{
+	display:inline-block;
+	width:36px;
+	height:36px;
+}
+/*logo*/
+.logo{
+	float:left;
+	text-align:center;
+	padding:15px 0;
+}
+.logo span{
+	display:inline-block;
+}
+.logo .cheff{
+	color:#feee00;
+	font-size:30px;
+}
+.logo .colombia{
+	color:#650e81;
+	font-size:16px;
+}
+/*search*/
+.search-container{
+	padding:5px;
+	margin:15px 0;
+	float:left;
+}
+.search{
+	width:24px;
+	height:24px;
+}
+.search img{
+	max-width:100%;
+}
+.search-input{
+	background:#f7f7f7;
+	position:absolute;
+	width:96%;
+	padding:10px 2%;
+	left:0;
+	top:50px;
+	display:none;
+}
+.search-input input{
+	width:90%;
+	margin:0 auto;
+	display:block;
+	background:#dbdbdb;
+	color:#000;
+	border:0;
+	border-radius:5px;
+	padding:3px;
+}
+/*share*/
+.share-container{
+	padding:5px;
+	margin:15px 0;
+	float:left;
+	position:relative;
+}
+.share{
+	width:24px;
+	height:24px;
+}
+.share img{
+	max-width:100%;
+}
+.share ul{
+	display:none;
+	padding:0;
+	background:rgba(132, 13, 143, 0.9);
+	list-style-type:none;
+	position:absolute;
+	left:-10px;
+	z-index:99;
+	color:#bfbfbf;
+}
+.share li{
+	text-align:center;
+	font-size:10px;
+	padding:14px;
+}
+.share li img{
+	display:inline-block;
+	width:36px;
+	height:36px;
+	max-width:none;
+}
+/*main*/
+.main{
+	padding:20px 0 0 0;
+	float:left;
+	width:100%;
+}
+/*recetas*/
+.recetas{
+	margin:0 10px;
+	padding:0;
+	list-style-type:none;
+}
+.recetas li{
+	overflow:hidden;
+	clear:both;
+	margin:10px 0;
+	border-bottom:1px solid #c8c8c8;
+	padding:0 0 10px 0;
+}
+.recetas li .img{
+	background-size:75px 50px;
+	background-position:center;
+	float:left;
+	width:50px;
+	height:50px;
+	margin-right:10px;
+}
+.recetas li h2{
+	font-weight:bold;
+	margin:0 0 3px 0;
+	color:#650e81;
+	font-size:20px;
+}
+.recetas li span{
+
+}
+/*slides*/
+.slide{
+	background:#fff;
+	position:absolute;
+}
+/*receta*/
+.receta-titulo{
+	text-transform:uppercase;
+	font-weight:lighter;
+	font-size:20px;
+	line-height:1.5;
+	color:#650e81;
+	padding:10px;
+}
+.video{
+	width:100%;
+}
+button{
+	background:#650e81;
+	padding:5px;
+	border:0;
+	border-radius:5px;
+	color:#fff;
+	width:70%;
+	display:block;
+	margin:20px auto;
+}
+.fancybox{
+	list-style-type:none;
+	text-align:center;
+	margin:20px 0;
+	padding:0;
+}
+.fancybox li{
+	display:inline-block;
+	width:29%;
+	margin:0 1%;
+}
+.fancybox li a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+.fancybox li .img{
+	background-size:cover;
+	background-position:center;
+	display:block;
+	width:100%;
+	height:100%;
+	border-radius:50%;
+}
+footer{
+	background:#650e81;
+	padding:15px 10px;
+	overflow:hidden;
+}
+footer a{
+	color:#fff;
+	text-decoration:none;
+	position:relative;
+}
+footer a span{
+	font-size:40px;
+	position:absolute;
+}
+footer .siguiente{
+	padding-right:20px;
+	float:right;
+}
+footer .anterior, footer .pdfprev{
+	padding-left:20px;
+	float:left;
+}
+footer .siguiente span{
+	top:-13px;
+	right:-5px;
+}
+footer .anterior span, footer .pdfprev span{
+	top:-13px;
+	left:-5px;
+}
+/*pdfs*/
+.pdf{
+	position:absolute;
+}
+.loadpdf{
+	background:#3e3e3e;
+	overflow:scroll;
+}
+.loadpdf img{
+	max-width:100%;
+}
+/*alerts*/
+.info{
+	background:rgba(132, 13, 143, 0.9);
+	position:absolute;
+	visibility:hidden;
+	width:80%;
+	left:50%;
+	top:150px;
+	color:#fff;
+	padding:30px 10px 60px;
+	font-weight:bold;
+	font-size:12px;
+	text-align:center;
+	line-height:1.5;
+}
+/*mediaqueries*/
+@media (max-width:360px){
+	.recetas li h2 {
+		font-size:15px;
+	}
+	.recetas li span {
+		font-size:12px;
+	}
+}
