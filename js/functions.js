@@ -13,12 +13,6 @@ $(document).ready(function(){
 		$('.main').css({
 			height: $('.showed').outerHeight() - $('.logo').outerHeight() - 20,
 		});
-
-		if( $(window).width() > $(window).height() ){
-			$('#swiffycontainer').addClass('horizontal');
-		}else{
-			$('#swiffycontainer').removeClass('horizontal');
-		}
 	});
 
 	$.expr[":"].contains = $.expr.createPseudo(function(arg) {
@@ -33,18 +27,7 @@ $(document).ready(function(){
 
 	var swiffy = $('#swiffycontainer');
 
-	setTimeout(function(){
-		swiffy.hide();
-		$('body').css('overflow-y', 'scroll');
-	},5000);
-
-	$('#swiffycontainer').removeClass('pres1 pres2 pres3').addClass('pres'+getRandomInt(1,3));
-	if( $(window).width() > $(window).height() ){
-		$('#swiffycontainer').addClass('horizontal');
-	}else{
-		$('#swiffycontainer').removeClass('horizontal');
-	}
-
+	$('#swiffycontainer img').attr('src', 'pres'+getRandomInt(1,3)+'.png');
 
 	$('.modal').colorbox({ width:'100%', onComplete:(function(){ $('.cboxPhoto').unbind().click($.colorbox.close); }) });
 
