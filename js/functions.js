@@ -30,7 +30,7 @@ $(document).ready(function(){
 	$('#swiffycontainer .splash').attr('src', 'img/pres'+getRandomInt(1,3)+'.png');
 
 	$('#swiffycontainer .splash').css({
-		width:$(window).width(),
+		//width:$(window).width(),
 	});
 
 	setTimeout(function(){
