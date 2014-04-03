@@ -30,12 +30,15 @@ $(document).ready(function(){
 	$('#swiffycontainer .splash').attr('src', 'img/pres'+getRandomInt(1,3)+'.png');
 
 	$('#swiffycontainer .splash').css({
-		//width:$(window).width(),
+		maxWidth:$(window).width()
 	});
 
 	setTimeout(function(){
-		swiffy.css({
-			display:none,
+		$('#swiffycontainer').css({
+			display:'none',
+		});
+		$('body').css({
+			overflowY:'scroll',
 		});
 	},6000);
 
