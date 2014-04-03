@@ -395,6 +395,7 @@ footer .anterior span, footer .pdfprev span{
 	overflow:hidden;
 }
 #swiffycontainer .splash{
+	width:100%;
 }
 #swiffycontainer .logo-splash{
 	position:fixed;
