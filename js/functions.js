@@ -27,7 +27,17 @@ $(document).ready(function(){
 
 	var swiffy = $('#swiffycontainer');
 
-	$('#swiffycontainer img').attr('src', 'pres'+getRandomInt(1,3)+'.png');
+	$('#swiffycontainer .splash').attr('src', 'img/pres'+getRandomInt(1,3)+'.png');
+
+	$('#swiffycontainer .splash').css({
+		width:$(window).width(),
+	});
+
+	setTimeout(function(){
+		swiffy.css({
+			display:none,
+		});
+	},6000);
 
 	$('.modal').colorbox({ width:'100%', onComplete:(function(){ $('.cboxPhoto').unbind().click($.colorbox.close); }) });
 
