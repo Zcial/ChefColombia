@@ -33,12 +33,18 @@ $(document).ready(function(){
 		maxWidth:$(window).width()
 	});
 
+	$('.superbody').css({
+		height:$(window).height(),
+		overflow:'hidden',
+	});
+
 	setTimeout(function(){
 		$('#swiffycontainer').css({
 			display:'none',
 		});
 		$('.superbody').css({
-			display:'block',
+			height:'auto',
+			overflow:'visible',
 		});
 	},5000);
 
