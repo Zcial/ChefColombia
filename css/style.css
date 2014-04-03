@@ -384,6 +384,7 @@ footer .anterior span, footer .pdfprev span{
 }
 /*swiffy*/
 #swiffycontainer{
+	background:#333;
 	position:absolute;
 	top:0;
 	left:0;
@@ -391,84 +392,18 @@ footer .anterior span, footer .pdfprev span{
 	min-height:100%;
 	text-align:Center;
 	z-index:300;
+	overflow:hidden;
 }
-#swiffycontainer.pres1{
-	background-image:url(../img/pres1.png);
-	background-repeat:no-repeat;
-	background-position:top center;
-	background-attachment:fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+#swiffycontainer .splash{
+	position:absolute;
+	top:0;
+	left:0;
 }
-#swiffycontainer.pres1 .logo-splash{
+#swiffycontainer .logo-splash{
 	position:fixed;
 	bottom:20%;
 	right:0;
 	width:50%;
-}
-#swiffycontainer.pres1.horizontal{
-	background-position:center -200px;
-}
-#swiffycontainer.pres1.horizontal .logo-splash{
-	position:fixed;
-	bottom:0;
-	right:50%;
-	margin-right:-100px;
-	width:200px;
-}
-#swiffycontainer.pres2{
-	background-image:url(../img/pres2.png);
-	background-repeat:no-repeat;
-	background-position:top center;
-	background-attachment:fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-#swiffycontainer.pres2 .logo-splash{
-	position:fixed;
-	top:50%;
-	right:0;
-	width:50%;
-}
-#swiffycontainer.pres2.horizontal{
-	background-position:center -200px;
-}
-#swiffycontainer.pres2.horizontal .logo-splash{
-	position:fixed;
-	bottom:0;
-	right:50%;
-	margin-right:-100px;
-	width:200px;
-}
-#swiffycontainer.pres3{
-	background-image:url(../img/pres3.png);
-	background-repeat:no-repeat;
-	background-position:top center;
-	background-attachment:fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-#swiffycontainer.pres3 .logo-splash{
-	position:fixed;
-	top:50%;
-	right:0;
-	width:50%;
-}
-#swiffycontainer.pres3.horizontal{
-	background-position:center -200px;
-}
-#swiffycontainer.pres3.horizontal .logo-splash{
-	position:fixed;
-	bottom:0;
-	right:50%;
-	margin-right:-100px;
-	width:200px;
 }
 .trece{
 	position:fixed;
