@@ -37,10 +37,10 @@ $(document).ready(function(){
 		$('#swiffycontainer').css({
 			display:'none',
 		});
-		$('body').css({
-			overflowY:'scroll',
+		$('.superbody').css({
+			display:'block',
 		});
-	},6000);
+	},5000);
 
 	$('.modal').colorbox({ width:'100%', onComplete:(function(){ $('.cboxPhoto').unbind().click($.colorbox.close); }) });
 
