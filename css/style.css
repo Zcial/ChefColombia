@@ -17,6 +17,7 @@ header{
 	background:#fff;
 	padding:0 10px;
 	position:fixed;
+	z-index:2;
 	top:0;
 	left:0;
 }
