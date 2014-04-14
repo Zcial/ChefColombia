@@ -161,7 +161,7 @@ $(document).ready(function(){
 		hideSlide(slide);
 	});
 
-	$('button').click(function(e){
+	$('section > button').click(function(e){
 		e.preventDefault();
 		pdf = $(this).attr('data-goto');
 		showPdf(pdf);
