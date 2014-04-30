@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget version="2.0.0" id="io.cordova.helloCordova" xmlns="http://www.w3.org/ns/widgets">
+    <name> That's Fresh Colombia
+</name>
+    <description> </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io"> Apache Cordova Team </author>
+    <access origin="*" />
+    <content src="index.html" />
+    <preference value="DEBUG" name="loglevel" />
+    <preference name="orientation" value="portrait" />
+    <feature name="App">
+        <param value="org.apache.cordova.App" name="android-package" />
+    </feature>
+</widget>
