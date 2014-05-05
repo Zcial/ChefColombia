@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget version="2.0.0" id="com.thatsfresh" xmlns="http://www.w3.org/ns/widgets">
-    <name> That's Fresh Colombia
-</name>
-    <description> </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io"> Apache Cordova Team </author>
-    <access origin="*" />
-    <content src="index.html" />
-    <preference value="DEBUG" name="loglevel" />
-    <preference name="orientation" value="portrait" />
-    <feature name="App">
-        <param value="org.apache.cordova.App" name="android-package" />
-    </feature>
-    <icon src="img/icon144.png" gap:platform="ios" width="144" height="144" />
-</widget>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.thatsfresh"
+        versionCode = "10" 
+        version     = "2.0.0" >
+        <name> That's Fresh Colombia</name>
+        <description> </description>
+        <author email="dev@cordova.apache.org" href="http://cordova.io"> Apache Cordova Team </author>
+        <access origin="*" />
+        <content src="index.html" />
+        <preference value="DEBUG" name="loglevel" />
+        <preference name="orientation" value="portrait" />
+        <feature name="App">
+            <param value="org.apache.cordova.App" name="android-package" />
+        </feature>
+
+	    <icon src="img/icon.png" />
+	    <icon src="img/icon144.png" gap:platform="ios" width="57" height="57" />
+	    <icon src="img/icon144.png" gap:platform="ios" width="72" height="72" />
+	    <icon src="img/icon144.png" gap:platform="ios" width="114" height="114" />
+	    <icon src="img/icon144.png" gap:platform="ios" width="144" height="144" />
+
+	    <gap:splash src="img/splash.png" />
+	    <gap:splash src="img/splash.png" gap:platform="ios" width="640" height="1136" />
+    </widget>
