@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.thatsfresh"
+        id          = "com.zcial.thatsfresh"
         versionCode = "10" 
         version     = "2.0.0" >
         <name> That's Fresh Colombia</name>
